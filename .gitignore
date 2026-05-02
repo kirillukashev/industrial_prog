@@ -2,3 +2,8 @@ task-cmake/A/index.h
 task-cmake/build/
 task-cmake/bin/
 task-cmake/lib/
+output.png
+task-curves/build/
+task-curves/generated/
+task-curves/map.png
+task-curves/output.png
