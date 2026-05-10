@@ -1,0 +1,7 @@
+if(NOT EXISTS "${DEST}")
+    file(DOWNLOAD "${URL}" "${DEST}" SHOW_PROGRESS STATUS DL_STATUS)
+    list(GET DL_STATUS 0 DL_CODE)
+    if(NOT DL_CODE EQUAL 0)
+        message(FATAL_ERROR "Download failed: ${DL_STATUS}")
+    endif()
+endif()
